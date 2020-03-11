@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+    New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+    Tutorial 13
+    Review Assignment
+    
+    Coctura Credit Page
+    Author: Eugenio Ocampo
+    Date: March 5, 2020
+    Filename: co_credit.html
+   -->
+   
+   <title>Web Form</title>
+   <meta charset="utf-8" />
+  <link href="co_base1.css" rel="stylesheet"  />
+   <link href="co_layout4.css" rel="stylesheet"  /> 
+   <link href="sd_layout1.css" rel="stylesheet" >
+   <script src="co_credit.js" async></script>
+
+</head>
+ <ul>
+   <li><a href="sd_home.html">Home</a></li>
+   <li><a href="about_us.html">About Us</a></li>
+   <li><a href="sd_home.html#comments">Our Tour Guides</a></li>
+   <li><a href="sd_pricing.html">Pricing Summary</a></li>
+	<li><a href="contact_us.html">Contact Us</a></li>
+</ul>
+
+<body>
+   <header>
+         
+      <img src="san_diego.png" alt="San Diego" />
+
+   </header>
+   
+
+   <section id="paySection">
+      <h1>Payment Form</h1>
+     
+      <form id="credit" name="credit" method="post" action="co_final.html">         
+         <fieldset id="creditcard">
+            <legend>Credit Information</legend>
+            <label for="cardHolder">Hiker's Name (card holder)*</label>
+            <input name="cardHolder" id="cardHolder" required type="text" />      
+        </fieldset>
+		  
+         <fieldset>
+            <label for="choicePackage">Tour Package*</label>
+             <select id = "myList">
+               <option value = "dayTorrey">Torrey Pines (1-day package: $ 110.00)</option>
+               <option value = "threedayTorrey">Torrey Pines (3-day package: $250.00)</option>
+               <option value = "dayCowles">Cowles Mountain (1-day package: $110.00)</option>
+               <option value = "threeCowle">Cowles Mountain (3-day package: $250.00)</option>
+			   <option value = "dayCuyamaca">Cuyamaca Peak (1-day package: $95.00)</option>
+			   <option value = "dayPenasquitos">Los Penasquitos (1-day package: $95.00)</option>
+             </select>
+        </fieldset>
+			
+        <fieldset id="cards">
+            <label class="cardLabel">Credit Company*</label>
+            <label class="cardLabel">
+            <input name="company" value="amex" type="radio" required />
+            <img src="co_amex.png" alt="American Express" />
+            </label>
+            <label class="cardLabel">               
+            <input name="company" value="discover" type="radio" />
+            <img src="co_discover.png" alt="Discover" />
+            </label>
+            <label class="cardLabel">                  
+            <input name="company" value="master" type="radio"  />
+            <img src="co_master.png" alt="MasterCard" />
+            </label>
+            <label class="cardLabel">                  
+            <input name="company" value="visa" type="radio"  />
+            <img src="co_visa.png" alt="Visa" />
+            </label>
+            </fieldset>          
+            <fieldset>
+            <label for="cardNumber">Credit Card Number*</label>
+            <input name="cardNumber" id="cardNumber" required type="text"
+                   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+
+            <label for="expDate">Expiration Date*</label>
+            <input name="expDate" id="expDate" required type="text" placeholder="mm/yyyy" />
+
+            <label for="cvc">CVC*</label>
+            <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+         </fieldset>
+
+         <p id="footnote">* - Required Item</p>        
+         <input type="submit" id="subButton" value="Submit Payment" />         
+      </form>
+   </section>
+   <input action="action" onclick="window.history.go(-1); return false;" type="button" value="<<<Previous Page" />
+   <footer>
+            <p>San Diego Hiking Trails Package Ordering</p>
+   </footer>
+</body>
+</html>

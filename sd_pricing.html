@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 6
+	  Case Problem 1
+
+      Marlin Internet Pricing
+      Author: 
+      Date:   
+
+      Filename:   sd_pricing.html
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>San Diego Hiking Trails Price Table</title>
+   <link href="sd_base.css" rel="stylesheet" >
+   <link href="sd_styles.css" rel="stylesheet" >
+   <link href="sd_layout.css" rel="stylesheet" >
+   <link href="sd_tables.css" rel="stylesheet" />  
+</head>
+
+<body>
+   <header>
+      <img src="san_diego.png" alt="San Diego Hiking Trail" id="logoimg" />
+		
+   </header>
+    <ul>
+	
+   <li><a href="about_us.html">About Us</a></li>
+   <li><a href="sd_home.html#comments">Our Tour Guides</a></li>
+   <li><a href="sd_pricing.html">Pricing Summary</a></li>
+	<li><a href="contact_us.html">Contact Us</a></li>
+</ul>
+   <article>
+ <br>
+ <br>
+  		 <table id="pricing">
+            <colgroup>
+               <col id="firstCol" />
+               <col id="dataCols" span="4" />
+            </colgroup>
+            <thead>
+               <tr>
+                  <th rowspan="1">Package</th>
+                  <th rowspan="1">1-day Package</th>
+                  <th rowspan="1">3-day Package</th>
+               </tr>
+
+            </thead>
+            <tbody>
+               <tr>
+                  <th>Torrey Pines Package</th>
+                  <td>&#36;110.00</td>
+                  <td>&#36;250.00</td>
+               </tr>
+               <tr>
+                  <th>Cowles Mountain Package</th>
+                  <td>&#36;110.00</td>
+                  <td>&#36;250.00</td>
+               </tr>
+               <tr>
+                  <th>Cuyamaca Peak Package</th>
+                  <td>&#36;95.00</td>
+                  <td>Not available at this time</td>
+               </tr>
+               <tr>
+                  <th>Los Penasquitos Package</th>
+                  <td>&#36;95.00</td>
+                  <td>Not available at this time</td>
+              
+            </tbody>
+          
+            
+         </table>
+         
+         
+      
+   </article>
+  <br>
+<br>
+<a href="sd_home.html" class="previous">&laquo; Home</a>
+<a href="web_form.html" class="next">Book your Package&raquo;</a>
+<br>
+<br>
+<input action="action" onclick="window.history.go(-1); return false;" type="button" value="<<<Previous Page" />
+   <footer>
+     San Diego Hiking Trails Pricing Package
+   </footer>
+</body>
+</html>

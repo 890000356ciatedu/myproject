@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*
+   
+   Layout styles for San Diego Hiking Trails
+
+   
+   Filename: sp_layout1.css
+
+*/
+
+/* Window and Body Styles */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #4CAF50;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #333;
+}
